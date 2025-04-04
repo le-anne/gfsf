@@ -5,6 +5,35 @@ body {
     color: #333;
   }
   
+
+  body {
+    background: #fff8ee;
+    color: #3b3b3b;
+  }
+  
+  header {
+    background: #ffdc73;
+    border-bottom: 2px solid #e6c68a;
+  }
+  
+  .disclaimer {
+    background: #ffedc2;
+    border: 1px solid #e6c68a;
+  }
+  
+  .filters button {
+    background: #ffb84d;
+  }
+  
+  .filters button:hover {
+    background: #ff9f1c;
+  }
+  
+  a:hover {
+    color: #c2622f;
+  }
+
+  
   header {
     background: #fbeeca;
     padding: 1.5rem;
@@ -107,4 +136,80 @@ body {
       height: 400px; /* You can adjust this */
     }
   }
+  
+  /* Final cleanup: balanced + fixed layout */
+  .gm-style-iw,
+  .gm-style-iw-c,
+  .gm-style-iw-t {
+    background: transparent !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+  }
+  
+  .gm-style-iw-d {
+    max-width: 280px;
+    background: #ffffff;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    white-space: normal;
+    z-index: 1000;
+  }
+  
+  .gm-style-iw-d p {
+    margin: 0 0 6px 0;
+    font-size: 14px;
+    line-height: 1.4;
+    word-break: break-word;
+  }
+  
+  .gm-style-iw-d h3 {
+    margin: 0 0 4px 0;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0;
+    background: transparent;
+  }
+  
+  .gm-style-iw-d a {
+    color: #3b3b3b;
+    text-decoration: underline dotted;
+    word-break: break-word;
+    transition: color 0.2s ease;
+  }
+  
+  .gm-style-iw-d a:hover {
+    color: #a65b3f;
+  }
+  
+  /* Clean and place the close 'X' button inside the popup */
+  .gm-ui-hover-effect {
+    top: 32px !important;
+    right: 12px !important;
+    width: 28px !important;
+    height: 28px !important;
+    background: #fbeeca !important;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    padding: 0 !important;
+    z-index: 1002;
+    cursor: pointer; /* This is key! */
+  }
+  
+  
+  .gm-ui-hover-effect span {
+    width: 12px !important;
+    height: 12px !important;
+    display: block;
+  }
+  
+  .gm-ui-hover-effect[title="Close"] {
+    pointer-events: none; /* Removes the dark tooltip */
+  }
+
   
